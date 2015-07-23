@@ -1,7 +1,7 @@
-h2-tomee-datasource-example
+vaadin-6-open-html-page-in-window
 =====================
 
-Example application showing the use of H2 database in Apache Tomee 1.7.2.
+Example application showing how to exhibit an html page not managed by Vaadin using the Window widgets.
 
 To create the project,
 
@@ -17,21 +17,9 @@ To build the project, run
 
 mvn clean install
 
-To deploy it in Tomee:
+To deploy it:
 
-1) Create a new H2 database and connect to it.
+1) Compile and run the project.
 
-2) Add the h2.jar in the lib/ directory in Tomme installation folder,
+2) Deploy the war file in your application server.
 
-3) Change the H2 database path in the WEB-INF/resources.xml to your environment.
-
-4) Compile the project.
-
-5) Start Tomee in the 8080 port.
-
-6) Deploy the application by running mvn tomme:deploy, the pom.xml already has the tomme-maven-plugin.
-
-7) Access the application in http://localhost:8080/h2-tomee-datasource-example/
-
-The full explanation is in my blog:
-https://andreiribas.wordpress.com/2015/06/15/create-and-use-datasources-in-apache-tomee-1-7-2-with-h2-database/
